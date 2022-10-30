@@ -5,9 +5,11 @@ import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/Alisha_Resume.pdf";
 import Alisha_Resume from "../../Assets/../Assets/Alisha_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page } from "react-pdf";
+import { Document, Page,pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
+const resumeLink ="https://github.com/ialisha/Portfolio-App/blob/master/src/Assets/Alisha_Resume.pdf";
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
