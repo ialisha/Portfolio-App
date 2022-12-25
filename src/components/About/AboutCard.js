@@ -28,7 +28,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Reduce Complexity!"{" "}
+            "Problems are at every corner, we Software Developers need to find and solve them by efficient use of Technology!"{" "}
           </p>
           <footer className="blockquote-footer">Alisha</footer>
         </blockquote>

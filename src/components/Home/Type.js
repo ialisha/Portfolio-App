@@ -8,7 +8,9 @@ function Type() {
         strings: [
           "Software Developer",
           "Reactjs",
+          "AWS",
           "Python",
+          "MongoDB",
           "Java",
           "",
         ],
