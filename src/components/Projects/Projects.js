@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import counter from "../../Assets/Projects/counter.png";
 import weather from "../../Assets/Projects/weather.png";
 import scraper from "../../Assets/Projects/scraper.png";
-
+import amplify from "../../Assets/Projects/amplify.png"
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -18,6 +18,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={amplify}
+              isBlog={false}
+              title="AWS Authentication "
+              description="A simple Reactjs application using AWS Amplify to demonstrate authentication using AWS"
+              ghLink="https://github.com/ialisha/react-amplify"
+             
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={scraper}
