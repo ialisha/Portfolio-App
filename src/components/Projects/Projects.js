@@ -5,7 +5,8 @@ import Particle from "../Particle";
 import counter from "../../Assets/Projects/counter.png";
 import weather from "../../Assets/Projects/weather.png";
 import scraper from "../../Assets/Projects/scraper.png";
-import amplify from "../../Assets/Projects/amplify.png"
+import amplify from "../../Assets/Projects/amplify.png";
+import chatgpt from "../../Assets/Projects/chatgpt.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -18,6 +19,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatgpt}
+              isBlog={false}
+              title="ChatGPT with Reactjs"
+              description= "A simple web app that can handle requests from the React application and use the OpenAI API to generate responses with ChatGPT."
+              ghLink="https://github.com/ialisha/react-chatGPT"
+             
+            />
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={amplify}
