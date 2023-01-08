@@ -6,6 +6,7 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
+
 } from "react-icons/di";
 import {
   SiCss3,
@@ -13,7 +14,8 @@ import {
   SiBootstrap,
   SiJava,
   SiMysql,
-  SiMongodb
+  SiMongodb,
+  SiAmazonaws,
 } from "react-icons/si";
 
 function Techstack() {
@@ -46,7 +48,9 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
-    
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAmazonaws/>
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
