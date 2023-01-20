@@ -7,6 +7,7 @@ import weather from "../../Assets/Projects/weather.png";
 import scraper from "../../Assets/Projects/scraper.png";
 import amplify from "../../Assets/Projects/amplify.png";
 import chatgpt from "../../Assets/Projects/chatgpt.png";
+import chromeEx from "../../Assets/Projects/chromeEx.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -39,6 +40,17 @@ function Projects() {
              
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chromeEx}
+              isBlog={false}
+              title="Chrome Extension"
+              description="A simple Chrome Extension using JavaScript to block social media websites"
+              ghLink="https://github.com/ialisha/SocialBlocker"
+             
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={scraper}
