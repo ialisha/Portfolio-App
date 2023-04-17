@@ -7,6 +7,7 @@ import weather from "../../Assets/Projects/weather.png";
 import scraper from "../../Assets/Projects/scraper.png";
 import amplify from "../../Assets/Projects/amplify.png";
 import chatgpt from "../../Assets/Projects/chatgpt.png";
+import student from "../../Assets/Projects/student.png";
 import chromeEx from "../../Assets/Projects/chromeEx.png";
 function Projects() {
   return (
@@ -20,6 +21,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={student}
+              isBlog={false}
+              title="REST API Demo"
+              description= "A simple Spring Boot app with Reactjs to demonstrate REST API."
+              ghLink="https://github.com/ialisha/RESTAPI_SpringBootDemo"
+             
+            />
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatgpt}
