@@ -8,10 +8,13 @@ function Type() {
         strings: [
           "Software Developer",
           "Reactjs",
-          "AWS",
-          "Python",
+          "Spring Boot",
+          "MySQL",
           "MongoDB",
+          "AWS",
           "Java",
+          "Python",
+          
           "",
         ],
         autoStart: true,

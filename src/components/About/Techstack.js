@@ -5,7 +5,6 @@ import {
   DiReact,
   DiMongodb,
   DiPython,
-  DiGit,
 
 } from "react-icons/di";
 import {
@@ -14,8 +13,8 @@ import {
   SiBootstrap,
   SiJava,
   SiMysql,
-  SiMongodb,
   SiAmazonaws,
+  SiSpringboot
 } from "react-icons/si";
 
 function Techstack() {
@@ -37,17 +36,15 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiSpringboot />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiMysql/>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMongodb/>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
+      
       <Col xs={4} md={2} className="tech-icons">
         <SiAmazonaws/>
       </Col>

@@ -26,7 +26,7 @@ function Projects() {
               imgPath={student}
               isBlog={false}
               title="REST API Demo"
-              description= "A simple Spring Boot app with Reactjs to demonstrate REST API."
+              description= "A simple Spring Boot app with Reactjs and MySQL to demonstrate REST API."
               ghLink="https://github.com/ialisha/RESTAPI_SpringBootDemo"
              
             />

@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
@@ -10,26 +9,12 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Alisha Irshad </span>
             from <span className="purple"> Toronto, Canada.</span>
-            <br />I am an aspiring Software Developer
+           
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+           I am a Software Developer, specialising in frontend web development arena. I have been developing websites using ReactJs and Spring Boot. I am familiar with Git/GitHub, REST API, AWS CLI, AWS DynamoDB, AWS IAM, Amazon EC2, Web Services/Microservices, Linux/Unix, SQL, Python. I am highly motivated and hardworking and I believe that we Software Developers can solve problems or optimise solutions by efficient use of Technology.
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Sports
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Running
-            </li>
-          </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "We Software Developers can solve problems or optimise solutions by efficient use of Technology.!"{" "}
-          </p>
+          
        
         </blockquote>
       </Card.Body>
