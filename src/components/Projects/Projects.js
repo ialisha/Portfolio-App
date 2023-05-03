@@ -9,6 +9,7 @@ import amplify from "../../Assets/Projects/amplify.png";
 import chatgpt from "../../Assets/Projects/chatgpt.png";
 import student from "../../Assets/Projects/student.png";
 import chromeEx from "../../Assets/Projects/chromeEx.png";
+import googlekeep from "../../Assets/Projects/googlekeep.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -21,6 +22,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={googlekeep}
+              isBlog={false}
+              title="Google Keep Clone"
+              description= "Clone of Google Keep which is a note taking service using Material-ui with React.js."
+              ghLink="https://github.com/ialisha/Google-Keep-Clone"
+             
+            />
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={student}
