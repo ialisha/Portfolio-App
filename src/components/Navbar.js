@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import Alisha_Resume from "../Assets/Alisha_Resume.pdf";
 import { CgGitFork } from "react-icons/cg";
 import {
   AiFillStar,
@@ -18,6 +19,7 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -26,8 +28,10 @@ function NavBar() {
       updateNavbar(false);
     }
   }
+  
 
   window.addEventListener("scroll", scrollHandler);
+  
 
   return (
     <Navbar
@@ -82,13 +86,9 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
+            
+           <Button  as="a" style={{backgroundColor:"#59347C" }} href={Alisha_Resume} download="Alisha.pdf"><CgFileDocument style={{ marginBottom: "2px" }} />  Resume </Button>   
+            
             </Nav.Item>
 
             
@@ -97,7 +97,7 @@ function NavBar() {
               <Button
                 href="https://github.com/ialisha"
                 target="_blank"
-                className="fork-btn-inner"
+                className="fork-btn-inner"  style={{marginTop:"-10px" ,height:"45px"}}
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />

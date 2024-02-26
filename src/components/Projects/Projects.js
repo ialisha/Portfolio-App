@@ -10,6 +10,7 @@ import chatgpt from "../../Assets/Projects/chatgpt.png";
 import student from "../../Assets/Projects/student.png";
 import chromeEx from "../../Assets/Projects/chromeEx.png";
 import googlekeep from "../../Assets/Projects/googlekeep.png";
+import netflixlogo from "../../Assets/Projects/netflixlogo.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -22,6 +23,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+         <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={netflixlogo}
+              isBlog={false}
+              title="Netlix Clone"
+              description= "Clone of Netflix using ReactJs, Redux and Tailwind CSS , implenting payments through Stripe."
+              ghLink="https://github.com/ialisha/Netflix-Clone"
+             
+            />
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={googlekeep}
